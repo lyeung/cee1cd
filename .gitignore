@@ -1,0 +1,13 @@
+# npm
+node_modules/
+
+# log files
+*.log
+
+# vim
+*.swp
+*.swo
+*.swn
+
+# env files
+.env
