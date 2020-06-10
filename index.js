@@ -44,11 +44,8 @@ app.post('/builds', async (req, res, next) => {
   }
   try {
     const repo = await nodeGit.Repository.open(localPath);
-    //const branch = await repo.getCurrentBranch();
-    //const name = await branch.name();
-    //const refCommit = await repo.getReferenceCommit(name);
-    await repo.checkoutBranch(`refs/remotes/origin/${branchName}`);
-    const refCommit = await repo.getReferenceCommit(name);
+    const refCommit = await repo.getBranch(`refs/remotes/origin/${branchName}`);
+    await repo.checkoutRef(refCommit);
     const sha = await refCommit.sha();
     console.log('branch', name);
     res.status(200).send({
@@ -61,8 +58,8 @@ app.post('/builds', async (req, res, next) => {
   }
 
   try {
-    const child = spawn('npm', ['install'], {
-      cwd: './artifacts',
+    const child = spawn('yarn', {
+      cwd: workingDir,
     });
     child.stderr.on('data', data => {
       console.log(`stderr ${data}`);
