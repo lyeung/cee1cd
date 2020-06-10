@@ -1,18 +1,22 @@
 {
-  "name": "bob-node",
+  "name": "cee1cd",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
+    "docker-cli-js": "^2.7.1",
     "nodegit": "^0.26.5"
   },
   "scripts": {
     "start": "nodemon index.js",
-    "prod": "node index.js"
+    "prod": "node index.js",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
   }
 }

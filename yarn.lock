@@ -14,10 +14,35 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
+"@types/blue-tape@^0.1.30":
+  version "0.1.33"
+  resolved "https://registry.yarnpkg.com/@types/blue-tape/-/blue-tape-0.1.33.tgz#61796d4f0455a00a61be59e52288cb3428209804"
+  integrity sha512-l5cQcLM3aPh55bBQ4geWQ8hZ4Ew+s4RvyhMaBpgW3aJ2HUfRgwd8ENKrk/utC4Hz1dJAiehyIa4vN6emxBMaog==
+  dependencies:
+    "@types/node" "*"
+    "@types/tape" "*"
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
+
+"@types/lodash@4.14.119":
+  version "4.14.119"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.119.tgz#be847e5f4bc3e35e46d041c394ead8b603ad8b39"
+  integrity sha512-Z3TNyBL8Vd/M9D9Ms2S3LmFq2sSMzahodD6rCS9V2N44HUMINb75jNkSuwAx7eo2ufqTdfOdtGQpNbieUjPQmw==
+
+"@types/node@*":
+  version "14.0.13"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.13.tgz#ee1128e881b874c371374c1f72201893616417c9"
+  integrity sha512-rouEWBImiRaSJsVA+ITTFM6ZxibuAlTuNOCyxVbwreu6k6+ujs7DfnU9o+PShFhET78pMBl3eH+AGSI5eOTkPA==
+
+"@types/tape@*":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@types/tape/-/tape-4.13.0.tgz#7a3f656f78a7eeee962fe4c8bedf016061e2d0ea"
+  integrity sha512-0V8cKowBdsiA9nbxAg7531sF2cdPZNiUogcfIUeUGm+bejUBE/bvibz3rH36iQP9bQjO/sOzFwU97/uC5mCyoA==
+  dependencies:
+    "@types/node" "*"
 
 abbrev@1:
   version "1.1.1"
@@ -134,6 +159,13 @@ aws4@^1.8.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.10.0.tgz#a17b3a8ea811060e74d47d306122400ad4497ae2"
   integrity sha512-3YDiu347mtVtjpyV3u5kVqQLP242c06zwDOgpeRnybmXlYYsLbtTrUBUm8i8srONt+FWobl5aibnU1030PeeuA==
+
+axios@^0.19.2:
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
+  dependencies:
+    follow-redirects "1.5.10"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -289,6 +321,15 @@ cli-boxes@^2.2.0:
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-2.2.0.tgz#538ecae8f9c6ca508e3c3c95b453fe93cb4c168d"
   integrity sha512-gpaBrMAizVEANOpfZp/EEUixTXDyGt7DFzdK5hU+UbWt/J0lB0w20ncZj59Z9a93xHb9u12zF5BS6i9RKbtg4w==
 
+cli-table-2-json@1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/cli-table-2-json/-/cli-table-2-json-1.0.13.tgz#33d5be36851477854b004356197a6409c7370aea"
+  integrity sha512-CpUj9dubfuIZSEezwUPycAJqM2dlATyyRUyBkfGeK2KNfrqK3XrdaBohMt0XlkEvsZyDfUEmPWCNvUO+a/7Wsw==
+  dependencies:
+    "@types/blue-tape" "^0.1.30"
+    "@types/lodash" "4.14.119"
+    lodash "^4.17.15"
+
 clone-response@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/clone-response/-/clone-response-1.0.2.tgz#d1dc973920314df67fbeb94223b4ee350239e96b"
@@ -388,6 +429,13 @@ debug@2.6.9, debug@^2.2.0:
   dependencies:
     ms "2.0.0"
 
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
+  dependencies:
+    ms "2.0.0"
+
 debug@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
@@ -436,6 +484,24 @@ detect-libc@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
+
+docker-cli-js@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/docker-cli-js/-/docker-cli-js-2.7.1.tgz#abb0f8337681c76f0b196635629bfe87c2d75b0a"
+  integrity sha512-x0MfLInVShMHXVg1WH1fA2KFdtLgpw1qoBOZrcU4pGU1wH/7YvrMpLFLH/nXdLUdMy+YEtBH4IiYbBZ/aKvPwA==
+  dependencies:
+    cli-table-2-json "1.0.13"
+    dockermachine-cli-js "3.0.5"
+    lodash.snakecase "^4.1.1"
+    nodeify-ts "1.0.6"
+
+dockermachine-cli-js@3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/dockermachine-cli-js/-/dockermachine-cli-js-3.0.5.tgz#7e7aa37adba885572e6b59ed9050fe347e558227"
+  integrity sha512-oV9RRKGvWrvsGl8JW9TWKpjBJVGxn/1qMvhqwPJiOPfRES0+lrq/Q8Wzixb6qinuXPVBhlWqhXb/Oxrh6Vuf/g==
+  dependencies:
+    cli-table-2-json "1.0.13"
+    nodeify-ts "1.0.6"
 
 dot-prop@^5.2.0:
   version "5.2.0"
@@ -579,6 +645,13 @@ finalhandler@~1.1.2:
     parseurl "~1.3.3"
     statuses "~1.5.0"
     unpipe "~1.0.0"
+
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
+  dependencies:
+    debug "=3.1.0"
 
 forever-agent@~0.6.1:
   version "0.6.1"
@@ -1003,6 +1076,11 @@ latest-version@^5.0.0:
   dependencies:
     package-json "^6.3.0"
 
+lodash.snakecase@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.snakecase/-/lodash.snakecase-4.1.1.tgz#39d714a35357147837aefd64b5dcbb16becd8f8d"
+  integrity sha1-OdcUo1NXFHg3rv1ktdy7Fr7Nj40=
+
 lodash@^4.17.14, lodash@^4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
@@ -1186,6 +1264,11 @@ nodegit@^0.26.5:
     request-promise-native "^1.0.5"
     tar-fs "^1.16.3"
 
+nodeify-ts@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/nodeify-ts/-/nodeify-ts-1.0.6.tgz#ceef172c4fad1a45a1ae60a31c7e295150b5e221"
+  integrity sha512-jq+8sqVG1aLqy5maMTceL8NUJ1CvarWztlxvrYh3G0aao9BsVeoVmVedUnrUSBLetP7oLIAJrPrw4+iIo7v3GA==
+
 nodemon@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.4.tgz#55b09319eb488d6394aa9818148c0c2d1c04c416"
@@ -1356,6 +1439,11 @@ prepend-http@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
+
+prettier@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
+  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
